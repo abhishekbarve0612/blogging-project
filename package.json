@@ -7,10 +7,13 @@
     "build": "next build",
     "start": "next start",
     "lint": "biome check",
-    "format": "biome format --write"
+    "format": "biome format --write",
+    "ts-node": "ts-node --compiler-options {\"module\":\"CommonJS\"}"
   },
   "dependencies": {
     "@apollo/client": "^4.0.9",
+    "@prisma/client": "^6.19.0",
+    "dotenv": "^17.2.3",
     "graphql": "^16.12.0",
     "graphql-yoga": "^5.16.2",
     "next": "16.0.3",
@@ -24,6 +27,11 @@
     "@types/react-dom": "^19",
     "babel-plugin-react-compiler": "1.0.0",
     "prisma": "^6.19.0",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.20.6",
     "typescript": "^5"
+  },
+  "prisma": {
+    "seed": "pnpm exec tsx prisma/seed.ts"
   }
 }
