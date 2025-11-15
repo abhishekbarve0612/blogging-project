@@ -11,6 +11,9 @@ importers:
       '@apollo/client':
         specifier: ^4.0.9
         version: 4.0.9(graphql@16.12.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(rxjs@7.8.2)
+      '@pothos/core':
+        specifier: ^4.10.0
+        version: 4.10.0(graphql@16.12.0)
       '@prisma/client':
         specifier: ^6.19.0
         version: 6.19.0(prisma@6.19.0(typescript@5.9.3))(typescript@5.9.3)
@@ -563,6 +566,11 @@ packages:
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [win32]
+
+  '@pothos/core@4.10.0':
+    resolution: {integrity: sha512-spC7v6N80GfDKqt6ZSGELLu7EFDZsuQBb/oCqAtDwAe+HIL5T0STjv220IumLeC8lIAMgTaZMa/WnMNKkawbFg==}
+    peerDependencies:
+      graphql: ^16.10.0
 
   '@prisma/client@6.19.0':
     resolution: {integrity: sha512-QXFT+N/bva/QI2qoXmjBzL7D6aliPffIwP+81AdTGq0FXDoLxLkWivGMawG8iM5B9BKfxLIXxfWWAF6wbuJU6g==}
@@ -1315,6 +1323,10 @@ snapshots:
 
   '@next/swc-win32-x64-msvc@16.0.3':
     optional: true
+
+  '@pothos/core@4.10.0(graphql@16.12.0)':
+    dependencies:
+      graphql: 16.12.0
 
   '@prisma/client@6.19.0(prisma@6.19.0(typescript@5.9.3))(typescript@5.9.3)':
     optionalDependencies:

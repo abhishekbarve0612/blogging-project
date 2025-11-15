@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@apollo/client": "^4.0.9",
+    "@pothos/core": "^4.10.0",
     "@prisma/client": "^6.19.0",
     "dotenv": "^17.2.3",
     "graphql": "^16.12.0",
